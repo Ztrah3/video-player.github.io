@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Video Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="player">
+     <video class="player__video viewer" src="https://ia800705.us.archive.org/18/items/Battlefield_Friends/BFFs%20Season%201/BFF%20-%20Claymore%20Specialist%20%28Season%201E10%29.mp4"></video>
+
+     <div class="player__controls">
+       <div class="progress">
+        <div class="progress__filled"></div>
+       </div>
+       <button class="player__button toggle" title="Toggle Play">►</button>
+       <button data-skip="-10" id="rewind" class="player__button">« 10s</button>
+       <button data-skip="25" id="fastForward" class="player__button">25s »</button>
+       <div class="volume-icon">
+        <img id="volume-img" src="./icon/icons8-sound-64.png" alt="Volume Icon">
+        <input type="range" id="volume">
+        <img id="fullscreen-img" src="./icon/icons8-fullscreen-50.png" alt="fullscreen Icon">
+       </div>
+     </div>
+   </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
